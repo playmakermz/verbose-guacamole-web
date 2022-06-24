@@ -1,0 +1,35 @@
+/* content element */
+.container-main {
+    padding: 2em;
+}
+
+/* sidebar in desktop size */
+#mySidebar {
+    width: 250px;
+}
+
+#demoAcc {
+    display: none;
+}
+
+/* This for mobile usage */
+@media (max-width: 992px) { 
+    
+    /* To customize sidebar in mobile ver */
+    #mySidebar {
+        width:300px;
+    }
+
+}
+
+
+
+
+/* Color set and list */
+
+/* Black side bar: 100701ff */
+/* orange sidebar: d09222ff */
+/* white sidebar : d2d1d0ff */
+
+/* Header gold    : e1ba73ff */
+/* Button gold    : d09222ff */
