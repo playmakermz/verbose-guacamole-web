@@ -8,8 +8,9 @@
     width: 250px;
 }
 
-#demoAcc {
-    display: none;
+/* dropdown sidebar menu 02 */
+.drop-show-02 {
+    display: block !important;
 }
 
 /* This for mobile usage */

@@ -10,6 +10,8 @@ document.write(`
 
         <a href="#" class="w3-bar-item w3-button">Shirts</a>
         <a href="#" class="w3-bar-item w3-button">Dresses</a>
+
+        <!-- sub menu 01 -->
         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
             Jeans <i class="fa fa-caret-down"></i>
         </a>
@@ -20,6 +22,19 @@ document.write(`
             <a href="#" class="w3-bar-item w3-button">Bootcut</a>
             <a href="#" class="w3-bar-item w3-button">Straight</a>
         </div>
+
+        <!-- sub menu 02 -->
+        <a onclick="dropShow()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            clothes <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-02" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
         <a href="#" class="w3-bar-item w3-button">Jackets</a>
         <a href="#" class="w3-bar-item w3-button">Gymwear</a>
         <a href="#" class="w3-bar-item w3-button">Blazers</a>
