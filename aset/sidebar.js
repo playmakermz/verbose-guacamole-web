@@ -49,7 +49,7 @@ document.write(`
             
         </a>
         <div id="drop-show-03" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-           <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
             <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
             <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
@@ -158,18 +158,19 @@ document.write(`
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
         <!-- Top header / default-->
-        <header class="w3-container w3-xlarge">
-            <p class="w3-left">Jeans</p>
+        <header class="w3-container w3-xlarge header-customize">
+            <p class="w3-left">Tambah Admin</p>
             <p class="w3-right">
-                <i class="fa fa-shopping-cart w3-margin-right"></i>
-                <i class="fa fa-search"></i>
+                Role <span>: Super Admin </span>
             </p>
         </header>
 
         <!-- Top menu small screen / default-->
         <!-- Top menu on small screens -->
         <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-            <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+            <div class="w3-bar-item w3-padding-24 w3-wide">
+            <img src="/aset/atas-bawah.png" alt="Logo">
+            </div>
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
                     class="fa fa-bars"></i></a>
         </header>
