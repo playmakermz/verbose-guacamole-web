@@ -3,17 +3,20 @@ document.write(`
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-        <h3 class="w3-wide"><b>LOGO</b></h3>
+        <img src="/aset/atas-bawah.png" alt="Logo">
+        <hr>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 
         <!-- sub menu 01 -->
         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            Kelola Admin <i class="fa fa-caret-down"></i>
+            Kelola Admin 
+            <snap id="arrow-d-01"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-01" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
             <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
             <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
@@ -23,11 +26,9 @@ document.write(`
             kelola jemaat <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-02" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <a href="#" class="w3-bar-item w3-button">Iuran</a>
@@ -39,11 +40,9 @@ document.write(`
             kelola barang <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-03" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+           <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <!-- sub menu 04 -->
@@ -51,11 +50,9 @@ document.write(`
             kelola Transaksi <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-04" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <!-- sub menu 05 -->
@@ -63,11 +60,9 @@ document.write(`
             kelola laporan <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-05" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+           <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <!-- sub menu 06 -->
@@ -75,11 +70,9 @@ document.write(`
             Akun <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-06" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <!-- sub menu 07 -->
@@ -87,11 +80,9 @@ document.write(`
             Aktiva <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-07" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
 
@@ -100,11 +91,9 @@ document.write(`
             kas <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-08" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <a href="#" class="w3-bar-item w3-button">Bank</a>
@@ -114,11 +103,9 @@ document.write(`
             Laporan Keuangan <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-09" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
 

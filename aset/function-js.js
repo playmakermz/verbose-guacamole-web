@@ -19,12 +19,18 @@ function disSidebar(a1, a2, a3, a4, a5, a6, a7, a8) {
  function myAccFunc() {
         let x = document.getElementById("demoAcc");
         let result = x.classList.contains("w3-show")
+        let arrowIcon = document.getElementById("arrow-d-01")
+        let arrowIcon02 = document.getElementById("arrow-n-01")
 
         if (result === false) {
+               arrowIcon.className = "arrow-miss"
+               arrowIcon02.classList.remove("arrow-miss")
               x.className += " w3-show"
               disSidebar('drop-show-02', 'drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-09')
         } else {
                x.classList.remove("w3-show")
+               arrowIcon.classList.remove("arrow-miss")
+               arrowIcon02.classList.add("arrow-miss")
         }
  }
  // dropdown sidebar 02

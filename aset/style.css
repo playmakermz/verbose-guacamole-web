@@ -8,14 +8,35 @@
     width: 250px;
 }
 
-/* dropdown sidebar menu 02 */
-.drop-show-02 {
-    display: block !important;
+/* sidebar color */
+.w3-white, .w3-hover-white:hover {
+    background-color: #100701ff !important;
+    color: #d2d1d0ff !important;
 }
 
-/* dropdown sidebar menu 03 */
-.drop-show-03 {
-    display: block !important;
+/* button hover */
+.w3-button:hover {
+    background-color: #d09222ff !important;
+    color: #d2d1d0ff !important;
+}
+
+/* sidebar text */
+.w3-text-grey, .w3-hover-text-grey:hover, .w3-text-gray, .w3-hover-text-gray:hover {
+    color: #d2d1d0ff !important;
+}
+
+/* padding for sidebar menu */
+.w3-padding-64 {
+    padding-top: 10px !important;
+}
+
+/* arrow icon */
+.arrow-miss {
+    display: none;
+}
+
+.arrow-pop-up {
+    display: inline-block;
 }
 
 /* This for mobile usage */
