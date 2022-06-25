@@ -13,6 +13,11 @@
     display: block !important;
 }
 
+/* dropdown sidebar menu 03 */
+.drop-show-03 {
+    display: block !important;
+}
+
 /* This for mobile usage */
 @media (max-width: 992px) { 
     

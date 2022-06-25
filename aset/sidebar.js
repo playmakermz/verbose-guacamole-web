@@ -7,25 +7,20 @@ document.write(`
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 
-
-        <a href="#" class="w3-bar-item w3-button">Shirts</a>
-        <a href="#" class="w3-bar-item w3-button">Dresses</a>
-
         <!-- sub menu 01 -->
         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            Jeans <i class="fa fa-caret-down"></i>
+            Kelola Admin <i class="fa fa-caret-down"></i>
         </a>
         <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
-                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-            <a href="#" class="w3-bar-item w3-button">Straight</a>
+                    class="fa fa-caret-right w3-margin-right"></i>Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <!-- sub menu 02 -->
         <a onclick="dropShow()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            clothes <i class="fa fa-caret-down"></i>
+            kelola jemaat <i class="fa fa-caret-down"></i>
         </a>
         <div id="drop-show-02" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
@@ -35,15 +30,100 @@ document.write(`
             <a href="#" class="w3-bar-item w3-button">Straight</a>
         </div>
 
-        <a href="#" class="w3-bar-item w3-button">Jackets</a>
-        <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-        <a href="#" class="w3-bar-item w3-button">Blazers</a>
-        <a href="#" class="w3-bar-item w3-button">Shoes</a>
+        <a href="#" class="w3-bar-item w3-button">Iuran</a>
+        <a href="#" class="w3-bar-item w3-button">Jadwalkan Kegiatan</a>
+        <a href="#" class="w3-bar-item w3-button">Detail Kegiatan</a>
+
+        <!-- sub menu 03 -->
+        <a onclick="dropShow03()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            kelola barang <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-03" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+        <!-- sub menu 04 -->
+        <a onclick="dropShow04()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            kelola Transaksi <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-04" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+        <!-- sub menu 05 -->
+        <a onclick="dropShow05()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            kelola laporan <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-05" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+        <!-- sub menu 06 -->
+        <a onclick="dropShow06()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            Akun <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-06" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+        <!-- sub menu 07 -->
+        <a onclick="dropShow07()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            Aktiva <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-07" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+
+        <!-- sub menu 08 -->
+        <a onclick="dropShow08()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            kas <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-08" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+        <a href="#" class="w3-bar-item w3-button">Bank</a>
+
+        <!-- sub menu 09 -->
+        <a onclick="dropShow09()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
+            Laporan Keuangan <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="drop-show-09" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-light-grey"><i
+                    class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+            <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+            <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+            <a href="#" class="w3-bar-item w3-button">Straight</a>
+        </div>
+
+
     </div>
-    <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding"
-        onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
-    <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
+ 
 </nav>
 
  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"

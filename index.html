@@ -63,38 +63,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
     </script>
+
+
+    <!-- for javascript sidebar function -->
+    <script src="/aset/function-js.js"></script>
+
+    <!-- open and close sidebar -->
     <script>
-        // Accordion dropdown sidebar 01
-        function myAccFunc() {
-        let x = document.getElementById("demoAcc");
-        let result = x.classList.contains("w3-show")
-
-        if (result === false) {
-        x.className += " w3-show"
-        document.getElementById("drop-show-02").classList.remove("drop-show-02")
-        } else {
-        x.classList.remove("w3-show")
-        }
-        }
-        // dropdown sidebar 02
-
-        function dropShow() {
-        // get dropdown 02
-        let x = document.getElementById("drop-show-02");
-        // check class in dropdown 02
-        let result = x.classList.contains("drop-show-02")
-
-        if (result === false) {
-        // enable dropdown 02
-        x.className += " drop-show-02"
-        // disable dropdown 01
-        document.getElementById("demoAcc").classList.remove("w3-show")
-        } else {
-        // disable dropdown 02
-        x.classList.remove("drop-show-02")
-        }
-        }
-
         // Click on the "Jeans" link on page load to open the accordion for demo purposes
         document.getElementById("myBtn").click();
 
