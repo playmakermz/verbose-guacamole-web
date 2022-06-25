@@ -35,8 +35,9 @@
     display: none;
 }
 
-.arrow-pop-up {
-    display: inline-block;
+/* hr */
+.line-hr {
+    border: 2px solid rgb(255, 183, 49);
 }
 
 /* This for mobile usage */

@@ -4,13 +4,14 @@ document.write(`
     <div class="w3-container w3-display-container w3-padding-16">
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
         <img src="/aset/atas-bawah.png" alt="Logo">
-        <hr>
+        <hr class="line-hr">
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 
         <!-- sub menu 01 -->
         <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
             Kelola Admin 
+
             <snap id="arrow-d-01"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
             <snap id="arrow-n-01" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
             
@@ -23,7 +24,11 @@ document.write(`
 
         <!-- sub menu 02 -->
         <a onclick="dropShow()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            kelola jemaat <i class="fa fa-caret-down"></i>
+            kelola jemaat 
+
+            <snap id="arrow-d-02"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-02" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-02" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
@@ -37,7 +42,11 @@ document.write(`
 
         <!-- sub menu 03 -->
         <a onclick="dropShow03()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            kelola barang <i class="fa fa-caret-down"></i>
+            kelola barang 
+
+            <snap id="arrow-d-03"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-03" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-03" class="w3-bar-block w3-hide w3-padding-large w3-medium">
            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
@@ -47,7 +56,11 @@ document.write(`
 
         <!-- sub menu 04 -->
         <a onclick="dropShow04()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            kelola Transaksi <i class="fa fa-caret-down"></i>
+            kelola Transaksi 
+
+            <snap id="arrow-d-04"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-04" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-04" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
@@ -57,17 +70,25 @@ document.write(`
 
         <!-- sub menu 05 -->
         <a onclick="dropShow05()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            kelola laporan <i class="fa fa-caret-down"></i>
+            kelola laporan 
+
+            <snap id="arrow-d-05"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-05" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-05" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-           <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
+            <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
             <a href="#" class="w3-bar-item w3-button">Daftar Admin</a>
             <a href="#" class="w3-bar-item w3-button">Hak Akses</a>
         </div>
 
         <!-- sub menu 06 -->
         <a onclick="dropShow06()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            Akun <i class="fa fa-caret-down"></i>
+            Akun 
+
+            <snap id="arrow-d-06"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-06" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-06" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
@@ -77,7 +98,11 @@ document.write(`
 
         <!-- sub menu 07 -->
         <a onclick="dropShow07()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            Aktiva <i class="fa fa-caret-down"></i>
+            Aktiva 
+
+            <snap id="arrow-d-07"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-07" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-07" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
@@ -88,7 +113,11 @@ document.write(`
 
         <!-- sub menu 08 -->
         <a onclick="dropShow08()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            kas <i class="fa fa-caret-down"></i>
+            kas 
+
+            <snap id="arrow-d-08"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-08" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-08" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>
@@ -100,7 +129,11 @@ document.write(`
 
         <!-- sub menu 09 -->
         <a onclick="dropShow09()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">
-            Laporan Keuangan <i class="fa fa-caret-down"></i>
+            Laporan Keuangan 
+
+            <snap id="arrow-d-09"><i class="bi bi-arrow-right" style="float:right;"></i></snap>
+            <snap id="arrow-n-09" class="arrow-miss"><i class="bi bi-arrow-down" style="float:right;"></i></snap>
+            
         </a>
         <div id="drop-show-09" class="w3-bar-block w3-hide w3-padding-large w3-medium">
             <a href="#" class="w3-bar-item w3-button">Tambah Admin</a>

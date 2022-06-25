@@ -12,6 +12,25 @@ function disSidebar(a1, a2, a3, a4, a5, a6, a7, a8) {
        document.getElementById(a8).classList.remove("w3-show")
 }
 
+// to make arrow icon default
+function arrowDefault(a,b) {
+       let myList = ["arrow-d-01 arrow-n-01", "arrow-d-02 arrow-n-02", "arrow-d-03 arrow-n-03", "arrow-d-04 arrow-n-04", "arrow-d-05 arrow-n-05", "arrow-d-06 arrow-n-06",
+       "arrow-d-07 arrow-n-07", "arrow-d-08 arrow-n-08", "arrow-d-09 arrow-n-09"]
+       for (let i of myList) {
+              arg = i.split(" ")
+              document.getElementById(arg[1]).classList.add("arrow-miss") // ensure down arrow not pop up
+              document.getElementById(arg[0]).classList.remove("arrow-miss") // ensure right arrow still there
+       }
+       document.getElementById(a).classList.add("arrow-miss") // remove right arrow
+       document.getElementById(b).classList.remove("arrow-miss") // add down arrow
+}
+
+// to make arrow icon pop-up / not default
+function arrowPopUp(a, b) {
+       document.getElementById(a).classList.remove("arrow-miss")
+       document.getElementById(b).classList.add("arrow-miss")
+}
+
 // list all dropshow 
 // demoAcc, drop-show-02, drop-show-03, drop-show-04, drop-show-05, drop-show-06, drop-show-07, drop-show-08, drop-show-09
 
@@ -19,18 +38,14 @@ function disSidebar(a1, a2, a3, a4, a5, a6, a7, a8) {
  function myAccFunc() {
         let x = document.getElementById("demoAcc");
         let result = x.classList.contains("w3-show")
-        let arrowIcon = document.getElementById("arrow-d-01")
-        let arrowIcon02 = document.getElementById("arrow-n-01")
 
-        if (result === false) {
-               arrowIcon.className = "arrow-miss"
-               arrowIcon02.classList.remove("arrow-miss")
+       if (result === false) {
+              arrowDefault("arrow-d-01", "arrow-n-01");
               x.className += " w3-show"
               disSidebar('drop-show-02', 'drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-09')
-        } else {
-               x.classList.remove("w3-show")
-               arrowIcon.classList.remove("arrow-miss")
-               arrowIcon02.classList.add("arrow-miss")
+       } else {
+              x.classList.remove("w3-show")
+              arrowPopUp("arrow-d-01", "arrow-n-01");
         }
  }
  // dropdown sidebar 02
@@ -45,11 +60,14 @@ function disSidebar(a1, a2, a3, a4, a5, a6, a7, a8) {
                // enable dropdown 02
                x.className += " w3-show"
                // disable dropdown 01 and others
-               
               disSidebar('drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-09', 'demoAcc')
+              // customize arrow dirrection 
+              arrowDefault("arrow-d-02", "arrow-n-02")
         } else {
                // disable dropdown 02
-               x.classList.remove("w3-show")
+              x.classList.remove("w3-show")
+              // customize arrow direction
+              arrowPopUp("arrow-d-02", "arrow-n-02")
         }
  }
 
@@ -64,11 +82,12 @@ function dropShow03() {
                // enable dropdown 03
                x.className += " w3-show"
                // disable dropdown 01 an others
-               
               disSidebar('drop-show-02', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-09', 'demoAcc')
+              arrowDefault("arrow-d-03", "arrow-n-03")
         } else {
                // disable dropdown 03
                x.classList.remove("w3-show")
+               arrowPopUp("arrow-d-03", "arrow-n-03")
         }
 }
  
@@ -79,9 +98,10 @@ function dropShow04() {
 
         if (result === false) {
                x.className += " w3-show"
-               
               disSidebar('drop-show-03', 'drop-show-02', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-09', 'demoAcc')
+              arrowDefault("arrow-d-04", "arrow-n-04")
         } else {
+               arrowPopUp("arrow-d-04", "arrow-n-04")
                x.classList.remove("w3-show")
         }
 }
@@ -93,9 +113,10 @@ function dropShow05() {
 
         if (result === false) {
                x.className += " w3-show"
-               
+              arrowDefault("arrow-d-05", "arrow-n-05")
               disSidebar('drop-show-03', 'drop-show-04', 'drop-show-02', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-09', 'demoAcc')
         } else {
+               arrowPopUp("arrow-d-05", "arrow-n-05")
                x.classList.remove("w3-show")
         }
  }
@@ -107,9 +128,10 @@ function dropShow06() {
 
         if (result === false) {
                x.className += " w3-show"
-               
               disSidebar('drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-02', 'drop-show-07', 'drop-show-08', 'drop-show-09', 'demoAcc')
+              arrowDefault("arrow-d-06", "arrow-n-06")
         } else {
+               arrowDefault("arrow-d-06", "arrow-n-06")
                x.classList.remove("w3-show")
         }
 }
@@ -121,9 +143,10 @@ function dropShow07() {
 
         if (result === false) {
                x.className += " w3-show"
-               
               disSidebar('drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-02', 'drop-show-08', 'drop-show-09', 'demoAcc')
+              arrowDefault("arrow-d-07", "arrow-n-07")
         } else {
+               arrowPopUp("arrow-d-07", "arrow-n-07")
                x.classList.remove("w3-show")
         }
  }
@@ -135,9 +158,10 @@ function dropShow08() {
 
         if (result === false) {
                x.className += " w3-show"
-               
               disSidebar('drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-02', 'drop-show-09', 'demoAcc')
+              arrowDefault("arrow-d-08", "arrow-n-08")
         } else {
+               arrowPopUp("arrow-d-08", "arrow-n-08")
                x.classList.remove("w3-show")
         }
  }
@@ -149,9 +173,10 @@ function dropShow09() {
 
         if (result === false) {
                x.className += " w3-show"
-               
-              disSidebar('drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-02', 'demoAcc')
+               disSidebar('drop-show-03', 'drop-show-04', 'drop-show-05', 'drop-show-06', 'drop-show-07', 'drop-show-08', 'drop-show-02', 'demoAcc')
+              arrowDefault("arrow-d-09", "arrow-n-09")
         } else {
                x.classList.remove("w3-show")
+              arrowPopUp("arrow-d-09", "arrow-n-09")
         }
  }
